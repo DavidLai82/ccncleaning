@@ -32,7 +32,7 @@ A comprehensive cleaning service booking application built with Next.js and Fire
 ```
 CCN-CLEANING/
 ├── frontend/           # Next.js frontend application
-├── backend/           # Firebase Cloud Functions (migrated from Express)
+├── functions/         # Firebase Cloud Functions (primary backend)
 ├── firebase.json      # Firebase configuration
 ├── firestore.rules    # Firestore security rules
 └── README.md

@@ -45,11 +45,12 @@ export const register = async (req: Request, res: Response, next: NextFunction):
     try {
       const userData = {
         email,
-        firstName,
-        lastName,
+        first_name: firstName,
+        last_name: lastName,
         phone,
         role: 'client' as const,
-        isVerified: false
+        is_verified: false,
+        created_at: new Date().toISOString()
       };
 
       const user = await databaseService.createUser(userData);
